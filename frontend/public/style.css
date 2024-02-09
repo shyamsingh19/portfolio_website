@@ -1,0 +1,27 @@
+/* writting whole generalise thing */
+*{
+    margin: 0; 
+    padding: 0;
+    background: transparent;
+    box-sizing: border-box; 
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    overflow: hidden;
+    
+    /* vertical direction mai scroll ke liye */
+    overflow-y: scroll; 
+
+}
+
+/* @media screen and(max-width:840) {
+    *{
+        font-size: small;
+    }
+    
+} */

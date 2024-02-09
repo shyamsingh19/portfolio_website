@@ -1,0 +1,114 @@
+#contactPage {
+  min-height: calc(100vh-4rem);
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills{
+  /* margin-top: 1rem; */
+  margin-bottom: 4rem;
+}
+
+.contactpageTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.clientDesc {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.skillImgs {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.skillImg {
+  object-fit: cover;
+  margin: 1rem;
+  padding: 0.5rem;
+  height: 100px;
+  /* width: auto;  */
+  background-color: rgb(50, 50, 50);
+}
+
+.contactDesc {
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.contactForm {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+
+.name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+}
+
+.submitBtn {
+  background: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 3rem;
+  margin: 2rem;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background: gray;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.link {
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .skillImg {
+    height: auto; 
+    width: 120px; /* Set the desired width */
+    margin: 1.2rem;
+    padding: 0.2rem;
+  }
+}

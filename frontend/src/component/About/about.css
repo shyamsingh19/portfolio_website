@@ -1,0 +1,123 @@
+#about {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+
+.aboutTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  /* padding-top: 3rem; */
+  margin-bottom: 1.5rem;
+}
+
+.aboutDesc {
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 51rem;
+  padding: 0 2rem;
+}
+
+.aboutBars {
+  margin-top: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align: left;
+}
+
+.aboutBar {
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(50, 50, 50);
+}
+
+.aboutBarImg {
+    display: block;
+    margin: auto;
+  object-fit: cover;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 2rem;
+}
+
+.aboutBarImg1 {
+    display: block;
+    margin: auto;
+  object-fit: cover;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1rem;
+}
+
+.aboutBarText {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 425px) {
+  .aboutBarText {
+    font-size: 0.7rem;
+  }
+
+  .aboutheading {
+    font-size: 1.5rem;
+  }
+
+  .aboutBarImg {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+  }
+  .aboutBarImg1 {
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-right: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .aboutheading {
+    font-size: 1.2rem;
+  }
+
+  .aboutBarImg {
+    height: 2.7rem;
+    width: 2.7rem;
+    margin-right: 1rem;
+  }
+  .aboutBarImg1 {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .aboutheading {
+    font-size: 1.1rem;
+  }
+
+  .aboutBarImg {
+    display: block;
+    margin: auto;
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-right: 0.7rem;
+  }
+  .aboutBarImg1 {
+    
+    height: 2.7rem;
+    width: 2.7rem;
+    margin-right: 0.4rem;
+    margin-left: 0;
+  }
+}
