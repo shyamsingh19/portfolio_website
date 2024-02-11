@@ -9,6 +9,7 @@ import gmailIcon from "../../assets/vecteezy_icono-de-gmail-png_16716465.png";
 import git from "../../assets/git.png";
 import github from "../../assets/github.png";
 import axios from 'axios';
+const baseurl = "https://nodemailer-q1f2.onrender.com"
 
 // import emailjs from "@emailjs/browser";
 // import { response } from "express";
@@ -37,7 +38,7 @@ const Contact = () => {
           // company,
         };
 
-        await axios.post('http://localhost:5000', body, {
+        await axios.post(`${baseurl}/mail`, body, {
             headers: {
               "Content-Type": "application/json",
             },
