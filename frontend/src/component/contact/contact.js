@@ -15,7 +15,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [subject, setSuject] = useState("");
+  const [subject, setSubject] = useState("");
 
   const handleRequest = async (e) => {
     e.preventDefault();
@@ -125,7 +125,7 @@ const Contact = () => {
             name="subject"
             value={subject}
             required={true}
-            onChange={(e) => setSuject(e.target.value)}
+            onChange={(e) => setSubject(e.target.value)}
           />
           <input
             type="email"
