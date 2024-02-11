@@ -8,8 +8,8 @@ import linkedinIcon from "../../assets/linkedin-icon.png";
 import gmailIcon from "../../assets/vecteezy_icono-de-gmail-png_16716465.png";
 import git from "../../assets/git.png";
 import github from "../../assets/github.png";
-import axios from 'axios';
-const baseurl = "https://nodemailer-q1f2.onrender.com"
+import axios from "axios";
+const baseurl = "https://nodemailer-q1f2.onrender.com";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -18,35 +18,32 @@ const Contact = () => {
   const [subject, setSuject] = useState("");
 
   const handleRequest = async (e) => {
-    if (email  && name !== "") {
-      if (message !== "" && subject !== "") {
-        e.preventDefault();
-        console.log({ email, message, name});
+    if (email && name !== "" && message !== "" && subject !== "") {
+      e.preventDefault();
+      console.log({ email, message, name });
 
-        const body = {
-          email,
-          message,
-          subject,
-          name,
-        };
+      const body = {
+        email,
+        message,
+        subject,
+        name,
+      };
 
-        await axios.post(`${baseurl}/mail`, body, {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          })
-          .then((res) => {
-            alert("Email Sent Successfully");
-            e.target.reset();
-            console.log(res);
-          })
-          .catch((err) => {
-            console.log("HHII")
-            console.log(err);
-          });
-      } else {
-        alert("Compose Email");
-      }
+      await axios
+        .post(`${baseurl}/mail`, body, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then((res) => {
+          alert("Email Sent Successfully");
+          e.target.reset();
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log("HHII");
+          console.log(err);
+        });
     } else {
       alert("Please fill all required filled");
     }
@@ -135,8 +132,8 @@ const Contact = () => {
           />
           <textarea
             className="msg"
-            id = "message"
-            value = {message}
+            id="message"
+            value={message}
             rows="5"
             placeholder="Your message"
             name="message"
@@ -146,7 +143,7 @@ const Contact = () => {
             type="submit"
             value="Send"
             className="submitBtn"
-            onClick = {handleRequest}
+            onClick={handleRequest}
           >
             Submit
           </button>
