@@ -18,6 +18,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [subject, setSuject] = useState("");
 
   // console.log(name);
   // console.log(email);
@@ -122,6 +123,16 @@ const Contact = () => {
             value={name}
             required={true}
             onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="text"
+            id="subject"
+            className="subject"
+            placeholder="Subject"
+            name="subject"
+            value={subject}
+            required={true}
+            onChange={(e) => setSuject(e.target.value)}
           />
           <input
             type="email"

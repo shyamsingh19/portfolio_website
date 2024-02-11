@@ -60,7 +60,7 @@
 
 .name,
 .email,
-.msg {
+.msg, .subject {
   font-size: medium;
   width: 100%;
   max-width: 40rem;

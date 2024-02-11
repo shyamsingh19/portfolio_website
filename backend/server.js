@@ -1,9 +1,9 @@
 const express = require("express");
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 let nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const creds = require("./credential.json");
-const cors = require('cors');
+const cors = require("cors");
 
 dotenv.config();
 
@@ -30,7 +30,7 @@ let transporter = nodemailer.createTransport({
 app.post("/mail", (req, res, next) => {
   var email = req.body.email;
   var message = req.body.message;
-  // var subject = rew.body.subject;
+  var subject = rew.body.subject;
   var name = req.body.name;
   var me = "shyamsunders507@gmail.com";
   // var company = req.body.company;
@@ -39,11 +39,13 @@ app.post("/mail", (req, res, next) => {
     from: me,
     to: email,
     bcc: me,
-    // subject: "Response from portfolio",
+    subject: subject,
     text: "Plaintext version of the message",
-    html: `${"<h2>hello sir</h2>"}`,
-    // html: `${"Name of sender: " +name} <br/> ${"Email: " + email} <noreply@${name}.com> <br/> ${"Message: " +message}`,
-  };  
+    html: `${"<h2>Thankyou for contacting me</h2>"} 
+        ${"Name of sender: " + name} <br/> 
+        ${"Your Email: " + email}> <br/> 
+        ${"your Message: " + message}`,
+  };
 
   transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
@@ -70,4 +72,3 @@ transporter.verify(function (err, success) {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.info("server has started", PORT));
-
