@@ -34,7 +34,7 @@ const Contact = () => {
         const body = {
           email,
           message,
-          // subject,
+          subject,
           name,
           // company,
         };
