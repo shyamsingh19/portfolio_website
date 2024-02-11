@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = {
   // Entry file for your application
   entry: "./src/index.js",
+  mode: 'development',
 
   // Output file after bundling
   output: {
@@ -25,6 +26,24 @@ module.exports = {
           },
         },
       },
+
+      {
+        test: /\.(sass|css|scss)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: "postcss-loader",
+            options: {
+              plugins: () => [
+                require("autoprefixer")()
+              ],
+            },
+          },
+          'sass-loader',
+        ]
+      },
+
       // Rule for handling CSS files
       {
         test: /\.css$/i,
