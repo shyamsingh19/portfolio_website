@@ -18,8 +18,9 @@ const Contact = () => {
   const [subject, setSuject] = useState("");
 
   const handleRequest = async (e) => {
+    e.preventDefault();
+    
     if (email && name !== "" && message !== "" && subject !== "") {
-      e.preventDefault();
       console.log({ email, message, name });
 
       const body = {
