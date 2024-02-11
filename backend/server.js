@@ -45,7 +45,7 @@ app.post("/mail", (req, res, next) => {
     <p>Regards<br/>
     <strong>Shyam Sunder Singh</strong><br/>
     <strong>Final year student @IIT (BHU), Varanasi</strong><br/>
-    <a href="https://your-portfolio-link.com" target="_blank" rel="noopener noreferrer">Portfolio Link</a></p>`,
+    <a href="https://shyam-portfolio-web.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio Link</a></p>`,
   };
 
   transporter.sendMail(mailOptions, (err, data) => {
