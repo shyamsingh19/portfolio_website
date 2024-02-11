@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   // Entry file for your application
   entry: "./src/index.js",
-  mode: 'development',
+  mode: "development",
 
   // Output file after bundling
   output: {
@@ -14,6 +14,11 @@ module.exports = {
   // Module rules for loaders
   module: {
     rules: [
+      // {
+      //   loader: "babel-loader",
+      //   test: /\.js$|jsx/,
+      //   // exclude: /node_modules/,
+      // },
       // Rule for handling images
       {
         test: /\.(png|jpe?g|gif)$/i,
@@ -26,40 +31,39 @@ module.exports = {
           },
         },
       },
+      
 
       {
         test: /\.(sass|css|scss)$/,
         use: [
-          'style-loader',
-          'css-loader',
+          "style-loader",
+          "css-loader",
           {
             loader: "postcss-loader",
             options: {
-              plugins: () => [
-                require("autoprefixer")()
-              ],
+              plugins: () => [require("autoprefixer")()],
             },
           },
-          'sass-loader',
-        ]
+          "sass-loader",
+        ],
       },
 
       // Rule for handling CSS files
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
+      // {
+      //   test: /\.css$/i,
+      //   use: ["style-loader", "css-loader"],
+      // },
       // Rule for handling PNG files
       {
         test: /\.png$/,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
     ],
   },
 
   // Other configurations as needed
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: ['*', '.js', '.jsx']
   },
 
   // Dev server configuration if needed
