@@ -41,7 +41,11 @@ app.post("/mail", (req, res, next) => {
     bcc: me,
     subject: subject,
     // text: "Plaintext version of the message",
-    html: `${"<h3>Thankyou for contacting me, I will contact you soon.</h3>"}${"Your Name: " + name} <br/>${"Your Email: " + email} <br/>${"Your Message: " + message}`,
+    html: `${"<h3>Thankyou for contacting me, I will contact you soon.</h3>"}${"Your Name: " + name} <br/>${"Your Email: " + email} <br/>${"Your Message: " + message} <br/> 
+    <p>Regards<br/>
+    <strong>Shyam Sunder Singh</strong><br/>
+    <strong>Final year student @IIT (BHU), Varanasi</strong><br/>
+    <a href="https://your-portfolio-link.com" target="_blank" rel="noopener noreferrer">Portfolio Link</a></p>`,
   };
 
   transporter.sendMail(mailOptions, (err, data) => {
