@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1400364f.css",
+    "main.js": "/static/js/main.e52bc97b.js",
+    "static/media/Polish_20231216_000305141.png": "/static/media/Polish_20231216_000305141.522445cd841c502c5362.png",
+    "static/media/project1.png": "/static/media/project1.79b8c832a1e5f06f453d.png",
+    "static/media/linkedin-icon.png": "/static/media/linkedin-icon.b1bebb391a157454d569.png",
+    "static/media/vecteezy_icono-de-gmail-png_16716465.png": "/static/media/vecteezy_icono-de-gmail-png_16716465.432a39b542c402c03918.png",
+    "static/media/web-dev-final.png": "/static/media/web-dev-final.2943bc37c27793d80023.png",
+    "static/media/live.png": "/static/media/live.00ea75833a563b25106f.png",
+    "static/media/project2.png": "/static/media/project2.f1c6981e6fe31105ca7e.png",
+    "static/media/githublive.png": "/static/media/githublive.f85f62e3d85ac9628065.png",
+    "static/media/programming.png": "/static/media/programming.2ebc8bf4c2ffd33a0e13.png",
+    "static/media/website-design_5234318.png": "/static/media/website-design_5234318.0c2af78498a0634c2059.png",
+    "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
+    "index.html": "/index.html",
+    "main.1400364f.css.map": "/static/css/main.1400364f.css.map",
+    "main.e52bc97b.js.map": "/static/js/main.e52bc97b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1400364f.css",
+    "static/js/main.e52bc97b.js"
+  ]
+}
