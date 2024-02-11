@@ -17,15 +17,9 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [subject, setSuject] = useState("");
 
-  if (!name || !email || !message || !subject) {
-    alert("	Please fill out all the fields before submitting.");
-    return;
-  }
-
-
   const handleRequest = async (e) => {
     if (email  && name !== "") {
-      if (message !== "") {
+      if (message !== "" && subject !== "") {
         e.preventDefault();
         console.log({ email, message, name});
 
