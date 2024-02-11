@@ -1,8 +1,11 @@
 const express = require("express");
+const dotenv = require('dotenv');
 let nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const creds = require("./credential.json");
 const cors = require('cors');
+
+dotenv.config();
 
 let app = express();
 
@@ -19,8 +22,8 @@ let transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: creds.auth.user,
-    pass: creds.auth.pass,
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
