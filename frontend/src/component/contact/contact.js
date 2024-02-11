@@ -11,24 +11,22 @@ import github from "../../assets/github.png";
 import axios from 'axios';
 const baseurl = "https://nodemailer-q1f2.onrender.com"
 
-// import emailjs from "@emailjs/browser";
-// import { response } from "express";
-
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [subject, setSuject] = useState("");
 
-  // console.log(name);
-  // console.log(email);
-  // console.log(message);
+  if (!name || !email || !message || !subject) {
+    alert("	Please fill out all the fields before submitting.");
+    return;
+  }
+
 
   const handleRequest = async (e) => {
     if (email  && name !== "") {
       if (message !== "") {
         e.preventDefault();
-        // setLoading(true);
         console.log({ email, message, name});
 
         const body = {
@@ -36,7 +34,6 @@ const Contact = () => {
           message,
           subject,
           name,
-          // company,
         };
 
         await axios.post(`${baseurl}/mail`, body, {
@@ -46,14 +43,12 @@ const Contact = () => {
           })
           .then((res) => {
             alert("Email Sent Successfully");
-            // setLoading(false);
+            e.target.reset();
             console.log(res);
-            // window.location.reload();
           })
           .catch((err) => {
             console.log("HHII")
             console.log(err);
-            // setLoading(false);
           });
       } else {
         alert("Compose Email");
