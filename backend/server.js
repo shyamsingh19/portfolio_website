@@ -41,7 +41,7 @@ app.post("/mail", (req, res, next) => {
     bcc: me,
     subject: subject,
     // text: "Plaintext version of the message",
-    html: `${"<h3>Thankyou for contacting me, I will contact you soon.</h3>"}${"Your Name: " + name} <br/>${"Your Email: " + email} <br/>${"Your Message: " + message}`,
+    html: `${"<h3>Thankyou for contacting me, I will contact you soon.</h3>"}${"<h6>Your Name: </h6>" + name} <br/>${"<h6>Your Email: </h6>" + email} <br/>${"<h6>Your Message: </h6>" + message}`,
   };
 
   transporter.sendMail(mailOptions, (err, data) => {
