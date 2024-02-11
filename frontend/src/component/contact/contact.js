@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleRequest = async (e) => {
     e.preventDefault();
-    
+
     if (email && name !== "" && message !== "" && subject !== "") {
       console.log({ email, message, name });
 
@@ -38,7 +38,13 @@ const Contact = () => {
         })
         .then((res) => {
           alert("Email Sent Successfully");
-          e.target.reset();
+
+          // Reset form fields
+          setName("");
+          setEmail("");
+          setMessage("");
+          setSubject("");
+          
           console.log(res);
         })
         .catch((err) => {
