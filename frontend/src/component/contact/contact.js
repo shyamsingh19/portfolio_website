@@ -37,7 +37,7 @@ const Contact = () => {
           // company,
         };
 
-        await axios.post('http://localhost:5000/mail', body, {
+        await axios.post('http://localhost:5000', body, {
             headers: {
               "Content-Type": "application/json",
             },
