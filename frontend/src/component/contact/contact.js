@@ -104,8 +104,6 @@ const Contact = () => {
           className="contactForm"
           onSubmit={handleRequest}
           method="post"
-          // ref={form}
-          // onSubmit={sendEmail}
         >
           <input
             type="text"
