@@ -12,7 +12,7 @@ const about = () => {
         <span className="aboutTitle">What I do</span>
 
         <span className="aboutDesc">
-          I am a abouted and passionate Web Developer specializing in creating
+          I am a skilled and passionate Web Developer specializing in creating
           web applications. My expertise lies in frontend development, where I
           have worked with HTML, CSS, JavaScript and ReactJS.
         </span>
@@ -44,7 +44,7 @@ const about = () => {
             <span className="aboutBarText">
               <h2 className="aboutheading">Programming</h2>
               <p>
-                I am a programmer abouted in various programming languages like
+                I am a programmer skilled in various programming languages like
                 C and C++. I've honed my about in Data Structures and
                 Algorithms(DSA).
               </p>
