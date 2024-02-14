@@ -45,7 +45,7 @@ const about = () => {
               <h2 className="aboutheading">Programming</h2>
               <p>
                 I am a programmer skilled in various programming languages like
-                C and C++. I've honed my about in Data Structures and
+                C and C++. I've honed my skills in Data Structures and
                 Algorithms(DSA).
               </p>
             </span>
