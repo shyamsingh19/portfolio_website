@@ -10,7 +10,7 @@ const Intro = () => {
       <div className="image-wrap">
         <img src={bg} alt="" className="bg" />
       </div>
-      
+
       <div className="introContent">
         <span className="hello">Hello</span>
         <span className="introtext">
@@ -22,16 +22,17 @@ const Intro = () => {
           I am skilled and passionate web developer with experience in <br />
           creating visually appearing and user freindly websites.{" "}
         </p>
-        <Link className="link">
-          <a href="https://drive.google.com/file/d/1C1Dh1QImG0aqQ0-Tx0a3uA6ivHVf4iBq/view?usp=sharing" target="_blank">
-            <button className="btn">
-              <img src={btnimg} alt="resume" className="btnImg" />
-              <span className="resume">Resume </span>
-            </button>
-          </a>
-        </Link>
+        <a
+          href="https://drive.google.com/file/d/1C1Dh1QImG0aqQ0-Tx0a3uA6ivHVf4iBq/view?usp=sharing"
+          target="_blank"
+          className="link"
+        >
+          <button className="btn">
+            <img src={btnimg} alt="resume" className="btnImg" />
+            <span className="resume">Resume </span>
+          </button>
+        </a>
       </div>
-
     </section>
   );
 };
