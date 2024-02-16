@@ -67,7 +67,7 @@ const project = () => {
         </div>
       </div>
 
-      {/* <button className="projectBtn">See more</button> */}
+      <button className="projectBtn">See more</button>
     </section>
   );
 };

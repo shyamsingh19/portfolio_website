@@ -133,6 +133,8 @@
 .projectBtn:hover {
   cursor: pointer;
   background: gray;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 @media only screen and (max-width: 768px){
