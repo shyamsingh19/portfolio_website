@@ -28,12 +28,12 @@ const project = () => {
               consequatur odio ad quasi aliquid quaerat officia. Sapiente?
             </p>
             <span className="links">
-              <a href="www" className="iconlinkcontainer">
+              <a href="https://github.com/shyamsingh19/portfolio_website" target="_blank" className="iconlinkcontainer">
                 <img src={githublive} alt="" className="linkicon" />
                 Github
               </a>
 
-              <a href="www" className="iconlinkcontainer">
+              <a href="https://shyam-portfolio-web.vercel.app/" target="_blank" className="iconlinkcontainer">
                 <img src={live} alt="" className="linkicon" />
                 Live
               </a>
