@@ -28,12 +28,20 @@ const project = () => {
               consequatur odio ad quasi aliquid quaerat officia. Sapiente?
             </p>
             <span className="links">
-              <a href="https://github.com/shyamsingh19/portfolio_website" target="_blank" className="iconlinkcontainer">
+              <a
+                href="https://github.com/shyamsingh19/portfolio_website"
+                target="_blank"
+                className="iconlinkcontainer"
+              >
                 <img src={githublive} alt="" className="linkicon" />
                 Github
               </a>
 
-              <a href="https://shyam-portfolio-web.vercel.app/" target="_blank" className="iconlinkcontainer">
+              <a
+                href="https://shyam-portfolio-web.vercel.app/"
+                target="_blank"
+                className="iconlinkcontainer"
+              >
                 <img src={live} alt="" className="linkicon" />
                 Live
               </a>
@@ -47,18 +55,25 @@ const project = () => {
           <span className="projectdesc">
             <h5 className="prjtext">SORTING VISUALISER</h5>
             <p className="prjdetail">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              iusto dolore similique consequatur odio ad quasi aliquid quaerat
-              officia. Sapiente? Lorem ipsum dolor sit iusto dolore similique
-              consequatur odio ad quasi aliquid quaerat officia. Sapiente?
+              Explore my Sorting Visualizer project! Using HTML, CSS, and
+              Vanilla JavaScript, I've crafted an interactive tool illustrating
+              sorting algorithms like Merge sort, Quick sort, Selection sort,
+              Bubble sort, and Insertion sort. You can customize the speed and
+              number of values for a hands-on experience!
             </p>
 
             <span className="links">
-              <a href="www" className="iconlinkcontainer">
+              <a
+                href="https://github.com/shyamsingh19/sorting-visualiser" target="_blank"
+                className="iconlinkcontainer"
+              >
                 <img src={githublive} alt="" className="linkicon" />
                 Github
               </a>
-              <a href="www" className="iconlinkcontainer">
+              <a
+                href="https://shyamsingh19.github.io/sorting-visualiser/" target="_blank"
+                className="iconlinkcontainer"
+              >
                 <img src={live} alt="" className="linkicon" />
                 Live
               </a>
