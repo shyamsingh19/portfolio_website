@@ -8,13 +8,12 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  margin-top: 3.5rem;
+  /* margin-top: 2.5rem; */
 }
 
 .aboutTitle {
   font-size: 3rem;
   font-weight: 600;
-  /* padding-top: 3rem; */
   margin-bottom: 1.5rem;
 }
 

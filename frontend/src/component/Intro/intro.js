@@ -2,7 +2,7 @@ import React from "react";
 import "./intro.css";
 import bg from "../../assets/Polish_20231216_000305141.png";
 import btnimg from "../../assets/download icon.png";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const Intro = () => {
   return (
@@ -23,7 +23,7 @@ const Intro = () => {
           creating visually appearing and user freindly websites.{" "}
         </p>
         <a
-          href="https://drive.google.com/file/d/1C1Dh1QImG0aqQ0-Tx0a3uA6ivHVf4iBq/view?usp=sharing"
+          href="https://drive.google.com/file/d/1C1Dh1QImG0aqQ0-Tx0a3uA6ivHVf4iBq/view?usp=sharing" rel="noreferrer"
           target="_blank"
           className="link"
         >

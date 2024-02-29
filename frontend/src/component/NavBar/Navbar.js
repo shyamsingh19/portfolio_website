@@ -18,7 +18,7 @@ const Navbar = () => {
       
 
       <div className="desktopMenu">
-        <Link activeClass="active" to ='intro' spy={true} smooth={true} diuration={500} className="deskMenuListItem">Home</Link>
+        <Link activeClass="active" to ='intro' spy={true} smooth={true} offset={-50} diuration={500} className="deskMenuListItem">Home</Link>
         <Link activeClass="active" to ='about' spy={true} smooth={true} offset={-50} diuration={500} className="deskMenuListItem">About</Link>
         <Link activeClass="active" to ='Projects' spy={true} smooth={true} offset={-50} diuration={500} className="deskMenuListItem">Projects</Link>
         <Link activeClass="active" to ='contactPage' spy={true} smooth={true} offset={-100} diuration={500} className="deskMenuListItem">Skills</Link>
@@ -33,6 +33,7 @@ const Navbar = () => {
       </button>
 
       <img src={imgMenu} alt="Menu" className="MobMenu" onClick={()=>setShowMenu(!showMenu)} />
+      
       <div className="navMenu" style={{display: showMenu ? 'flex' : 'none'}}>
         <Link activeClass="active" to ='intro' spy={true} smooth={true} offset={-100} diuration={500} className="listItem" onClick={()=>setShowMenu(false)}>Home</Link>
         <Link activeClass="active" to ='about' spy={true} smooth={true} offset={-50} diuration={500} className="listItem" onClick={()=>setShowMenu(false)}>About</Link>

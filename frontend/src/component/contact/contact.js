@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, {  useState } from "react";
 import "./contact.css";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
@@ -162,7 +162,7 @@ const Contact = () => {
               <img src={linkedinIcon} alt="" className="link" />
             </a>
 
-            <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=singhshyam1089@gmail.com&tf=1">
+            <a href="mailto:singhshyam1089@gmail.com">
               <img src={gmailIcon} alt="" className="link" />
             </a>
           </div>
