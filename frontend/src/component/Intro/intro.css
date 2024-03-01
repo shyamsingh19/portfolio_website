@@ -2,7 +2,7 @@
   height: calc(100vh-4rem);
   width: 100vw;
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   margin-top: 1rem;
   /* margin-bottom: 7rem; */
   overflow: hidden;
@@ -130,7 +130,7 @@
   }
 
   .intropara br {
-    display: none; 
+    display: none;
   }
 
   .intropara {
@@ -141,7 +141,7 @@
     height: 2.5rem;
     width: 8rem;
   }
-  
+
   .resume {
     font-size: 0.7rem;
     font-weight: 500;
@@ -149,6 +149,10 @@
 }
 
 @media only screen and (max-width: 375px) {
+  #intro {
+    margin-top: 1rem;
+  }
+
   .bg {
     display: block;
     margin: auto;
