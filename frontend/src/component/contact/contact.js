@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
@@ -8,6 +8,7 @@ import linkedinIcon from "../../assets/linkedin-icon.png";
 import gmailIcon from "../../assets/vecteezy_icono-de-gmail-png_16716465.png";
 import git from "../../assets/git.png";
 import github from "../../assets/github.png";
+import emailsent from "../../assets/send.gif";
 import axios from "axios";
 const baseurl = "https://nodemailer-q1f2.onrender.com";
 
@@ -16,12 +17,15 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleRequest = async (e) => {
     e.preventDefault();
 
     if (email && name !== "" && message !== "" && subject !== "") {
       console.log({ email, message, name });
+
+      setLoading(true);
 
       const body = {
         email,
@@ -37,6 +41,8 @@ const Contact = () => {
           },
         })
         .then((res) => {
+          // Set loading to false after successful request
+          setLoading(false);
           alert("Email Sent Successfully");
 
           // Reset form fields
@@ -44,10 +50,11 @@ const Contact = () => {
           setEmail("");
           setMessage("");
           setSubject("");
-          
+
           console.log(res);
         })
         .catch((err) => {
+          setLoading(false);
           console.log("HHII");
           console.log(err);
         });
@@ -95,16 +102,17 @@ const Contact = () => {
       </div>
 
       <div id="contact">
+        {loading && (
+          <div className="loading-overlay">
+            <img src={emailsent} alt="Loading" className="loading-indicator" />
+          </div>
+        )}
         <h1 className="contactpageTitle">Contact me</h1>
         <span className="contactDesc">
           Please fill out the form below to discuss any work opportunities.{" "}
         </span>
 
-        <form
-          className="contactForm"
-          onSubmit={handleRequest}
-          method="post"
-        >
+        <form className="contactForm" onSubmit={handleRequest} method="post">
           <input
             type="text"
             id="name"
