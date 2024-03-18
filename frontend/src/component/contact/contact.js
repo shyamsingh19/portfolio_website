@@ -10,7 +10,8 @@ import git from "../../assets/git.png";
 import github from "../../assets/github.png";
 import emailsent from "../../assets/send.gif";
 import axios from "axios";
-const baseurl = "https://portfolio-backend-psi-two.vercel.app";
+// const baseurl = "https://nodemailer-q1f2.onrender.com";
+const baseurl = "https://portfolio-backend-psi-two.vercel.app/";
 
 const Contact = () => {
   const [name, setName] = useState("");
