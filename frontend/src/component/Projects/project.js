@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./project.css";
-import project1 from "../../assets/project1.png";
-import project2 from "../../assets/project2.png";
-import project3 from "../../assets/project3.png";
+import project1 from "../../assets/projectimg1.png";
+import project2 from "../../assets/projectimg2.png";
+import project3 from "../../assets/projectimg3.png";
+import project4 from "../../assets/projectimg4.png";
 import githublive from "../../assets/githublive.png";
 import live from "../../assets/live.png";
 
@@ -22,8 +23,8 @@ const Project = () => {
       </span>
 
       <div className="projectImgs">
-        <div className="prj2">
-          <img src={project2} alt="" className="projectimg" />
+        <div className="prj1">
+          <img src={project1} alt="" className="projectimg" />
 
           <span className="projectdesc">
             <h5 className="prjtext">HOSPITAL WEBSITE</h5>
@@ -58,8 +59,8 @@ const Project = () => {
           </span>
         </div>
 
-        <div className="prj1">
-          <img src={project1} alt="" className="projectimg" />
+        <div className="prj2">
+          <img src={project2} alt="" className="projectimg" />
 
           <span className="projectdesc">
             <h5 className="prjtext">PORTFOLIO WEBSITE</h5>
@@ -97,6 +98,45 @@ const Project = () => {
         {showMore && (
           <div className="prj3">
             <img src={project3} alt="" className="projectimg" />
+
+            <span className="projectdesc">
+              <h5 className="prjtext">TEXT SUMMARIZER</h5>
+              <p className="prjdetail">
+                Explore my Sorting Visualizer project! Using HTML, CSS, and
+                Vanilla JavaScript, I've crafted an interactive tool
+                illustrating sorting algorithms like Merge sort, Quick sort,
+                Selection sort, Bubble sort, and Insertion sort. You can
+                customize the speed and number of values for a hands-on
+                experience!
+              </p>
+
+              <span className="links">
+                <a
+                  href="https://github.com/shyamsingh19/Text-Summarizer-App"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="iconlinkcontainer"
+                >
+                  <img src={githublive} alt="" className="linkicon" />
+                  Github
+                </a>
+                <a
+                  href="https://text-summarizer-ai.vercel.app/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="iconlinkcontainer"
+                >
+                  <img src={live} alt="" className="linkicon" />
+                  Live
+                </a>
+              </span>
+            </span>
+          </div>
+        )}
+        
+        {showMore && (
+          <div className="prj4">
+            <img src={project4} alt="" className="projectimg" />
 
             <span className="projectdesc">
               <h5 className="prjtext">SORTING VISUALISER</h5>
