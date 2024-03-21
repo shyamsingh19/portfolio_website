@@ -23,7 +23,7 @@ const Intro = () => {
           creating visually appearing and user freindly websites.{" "}
         </p>
         <a
-          href="https://drive.google.com/file/d/1C1Dh1QImG0aqQ0-Tx0a3uA6ivHVf4iBq/view?usp=sharing" rel="noreferrer"
+          href="https://drive.google.com/file/d/1jWxZqhLsNNvzn611D6VZUWCG0b-2G2tx/view?usp=sharing" rel="noreferrer"
           target="_blank"
           className="link"
         >
