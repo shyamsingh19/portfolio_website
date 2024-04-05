@@ -19,8 +19,7 @@ const Intro = () => {
           Frontend Web developer{" "}
         </span>
         <p className="intropara">
-          I am skilled and passionate web developer with experience in <br />
-          creating visually appearing and user freindly websites.{" "}
+          I am a skilled and passionate web developer with experience <br />creating visually appealing and user-friendly websites.{" "}
         </p>
         <a
           href="https://drive.google.com/file/d/1jWxZqhLsNNvzn611D6VZUWCG0b-2G2tx/view?usp=sharing" rel="noreferrer"
