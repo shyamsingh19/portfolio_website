@@ -13,7 +13,7 @@ const about = () => {
 
         <span className="aboutDesc">
           I am a skilled and passionate Web Developer specializing in creating
-          web applications. My expertise lies in frontend development, where I
+          web applications. My expertise lies in web development, where I
           have worked with HTML, CSS, JavaScript and ReactJS.
         </span>
 
